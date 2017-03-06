@@ -1,0 +1,51 @@
+Part 1: Discussion Questions
+
+Recursion
+
+1. Recursion is a bit like the movie inception, or like a set of nested 
+dolls moving to the inside of the nested dolls to to return a value from the 
+inner most nested layer that then sets of a series of function call reactions if
+the condition is true .  It is where a function calls upon 
+itself. 
+
+2. It is necessary to have a base case because it will be like an infinite loop go on forever.
+With no base case you will reach a runtime error where the maximum recursion depth exceeded.
+You need a base case to tell the program when to stop recursing. 
+
+Graphs
+
+1. A graph is similar data structure to a tree but they have cycles. 
+They can be non directed and directed. A graph has nodes like a tree but contain
+edge that connects two nodes, adjacent two nodes that are adjacent if they share
+an edge. Also there is an adjaceny list for a given node a list of 
+every node it is directly connected to. 
+ 
+2. A graph is different from a tree because trees have a hierarchy and graphs do not. 
+All trees are graphs but not all graphs are trees. 
+
+3. An example of something that would be good to model with a graph is your facebook friends.
+The graph would be undirected and would contain adjacency lists. 
+
+
+Performance of different data structures:
+
+
+
+Data Structure      Index   Search  Add-R   Add-L   Pop-L   Pop-R
+Python List (Array) O(1)    O(n)    O(1)    O(n)    O(n)     O(1)  
+Linked lists        O(n)    O(n)    O(1)    O(1)    O(1)     O(n)  
+Doubly-Linked List  O(n)    O(n)    O(1)    O(1)    O(1)     O(1)   
+Queue (as Array)    X        X      O(1)     X      O(n)      X
+Queue (as LL or DLL) X       X      O(1)     X      O(1)      X
+Stack (as A,L,or DLL)X       X       X       O(1)   O(1)     O(1)
+Deque (as DLL)       X       X       O(1)    O(1)    O(1)    O(1)  
+
+
+
+The answers for dictionary have been provided; you should fill in the rest:
+
+Data Structure          Get     Add          Delete  Iterate  Memory
+Dictionary (Hash Map)   O(1)    O(1)          O(1)    O(n)     medium
+Set (Hash Map)          O(1)    O(1)          O(1)    O(n)     medium        
+Binary Search Tree     O(log n) O(log n)    O(logn)   O(n)      low       
+Tree                    O(n)    O(1)         O(1)     O(n)      low  
